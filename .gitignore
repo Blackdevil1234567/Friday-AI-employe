@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Production / Build output
+dist/
+**/dist/
+
+# Environment variables & secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Databases & SQLite
+*.db
+*.sqlite
+backend/database.db
+
+# Workspace data & logs
+backend/workspace/*
+!backend/workspace/.gitkeep
+*.log
+npm-debug.log*
+
+# Editor & OS directories
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,16 @@
+{
+  "name": "friday-ai-employee",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install --legacy-peer-deps && npm install --prefix backend --legacy-peer-deps && npm install --prefix frontend --legacy-peer-deps",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build:all": "npm run build --prefix backend && npm run build --prefix frontend"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
